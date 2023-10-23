@@ -1,0 +1,31 @@
+cd
+
+-- to initialize git
+
+$ git init
+Initialised empty Git repository in /home/thomas/test-git-repo/.git/
+$ git status
+On branch main
+
+
+
+-- to set main as defaultBranch
+
+$ git config --global init.defaultBranch main
+
+
+
+
+-- first time to push files -- the main branch needs to allows force push.. set that in project-settings
+$ cd existing_repo
+$ git remote add origin https://git.uiowa.edu/cslaterscott/dw-bi-integration.git
+$ git branch -M main
+$ git push -uf origin main
+
+
+To enable force pushes on branches that are already protected:
+
+On the top bar, select Menu > Projects and find your project.
+On the left sidebar, select Settings > Repository.
+Expand Protected branches.
+In the list of protected bcd temp
